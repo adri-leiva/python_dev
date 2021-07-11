@@ -4,7 +4,7 @@ print("Hola mundo");
 
 
 #comentario lineal
-"""comentario multilinea (ctrl shift a) """ 
+"""comentario multilinea (ctrl+shift+a) """  
 
 
 
