@@ -74,6 +74,17 @@ numeroEntero = int (7)
 cadena = str(2)
 numerofloat= float (8)
 
+
+_______________________________________________________________________________________________
+
+#ESTRUCTURAS de control
+
+ for indice in range(0,longiutd_arreglo):
+    ...
+
+num_a = int(input ("Ingrese el valor de a: "))
+while num_a!= 111:
+    num_a = int(input ("Ingrese nro: "))
 _______________________________________________________________________________________________
 
 #FUNCIONES
