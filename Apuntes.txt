@@ -1,0 +1,109 @@
+
+
+_______________________________________________________________________________________________
+
+COMENTARIOS
+#comentario lineal
+"""comentario multilinea (ctrl+shift+a) """  
+_______________________________________________________________________________________________
+
+VARIABLES (debilmente tipado)
+
+variable_X = "valorX"; 
+variable_Y = "ValorY"
+
+#VARIABLES GLOBALES
+Dentro de una funcion se escribe: GLOBAL variable
+OBS! Es importante que la funcion se ejecute antes, para que a la variable global se le asine un valor.
+
+_______________________________________________________________________________________________
+
+CONCATENACION   +; f; format(...)  
+
+concateno = variable_X + " " + variable_Y
+* print( f"{variable_X} {variable_Y}")
+* print ("cadena original {} {} mas texto" . format(variable_Y,variable_X))
+* print (variable_X , variable_Y)
+_______________________________________________________________________________________________
+
+TIPOS DE DATOS
+
+nada = None
+cadena = "es una cadena"
+entero =  7
+flotante = 13.4
+booleano = True 
+booleano = False
+
+* LISTA (list / arrays). Puede estar compuesto con datos de cualquier tipo
+
+arreglo = [10,"cadena" , 11,5,4]
+arreglo2 = list (('a','b','c'))
+
+OBS!
+El indice de los arreglos puede ser nro positivos (arranca desde izquierda a derecha,comienza desde el valor 0) y
+negativos (arranca de derecha a izquierda, comienza desde el valor -1).
+El indice puede ser un rango, ej cantante [valor_inicio:Valorfinal], esto genera una sublista.
+
+* Recorrer un arreglo 
+    for Valor_elemento in array:
+    ...
+
+
+* TUPLA (tuple)
+tupla = ("cadena", "a")
+
+* DICCIONARIO - arreglos asociativos 
+diccionario = {
+    "index1" : "valor",
+    "index2": "valor2"
+}
+_______________________________________________________________________________________________
+
+Funcion RANGE (devuelve un rango entre un numero y otro)
+rango=range(9)
+
+# Metodo util ( devuelve una cadena indicando el tipo de dato con el que se trabaja)
+print (type(range))
+
+_______________________________________________________________________________________________
+
+CONVERTIR UN TIPO DE DATOS A OTRO
+
+numeroEntero = int (7)
+cadena = str(2)
+numerofloat= float (8)
+
+
+_______________________________________________________________________________________________
+
+#ESTRUCTURAS de control
+
+ for indice in range(0,longiutd_arreglo):
+    ...
+
+num_a = int(input ("Ingrese el valor de a: "))
+while num_a!= 111:
+    num_a = int(input ("Ingrese nro: "))
+_______________________________________________________________________________________________
+
+#FUNCIONES
+
+def nombreDeMiFuncion (paramertro): 
+   return valor
+
+#invocar funciones
+nombreDeMiFuncion(parametro)
+
+#Funciones con PARAMETROS OPCIONALES
+def nombreDeMiFuncion (paramertro = valor/none):
+
+#invocar funciones con PARAMETROS OPCIONALES
+nombreDeMiFuncion()
+
+#Funciones LAMBDA (Funciones anonimas, sin nombre, sin la necesidad de definir con DEF. 
+Usada para tareas repetitivas pequeñas)
+dime_el_anio = lambda year: f"El año es {year}"
+
+# LLamar a una funcion LAMBDA
+print (dime_el_anio(2021))
